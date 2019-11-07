@@ -1,0 +1,40 @@
+{
+  "name": "leaflet-routing-machine-locationiq",
+  "version": "1.0.0",
+  "description": "Support for Locationiq in Leaflet Routing Machine Based on OSRMv1",
+  "main": "dist/lrm-locationiq.js",
+  "scripts": {
+    "dist": "./scripts/dist.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leaflet",
+    "routing",
+    "lrm",
+    "locationiq",
+    "lrm-locationiq"
+  ],
+  "author": "Przemysław Lazarek <plazarek@gbox.pl>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daredzik/leaflet-routing-machine-locationiq/"
+  },
+  "homepage": "https://github.com/Daredzik/leaflet-routing-machine-locationiq",
+  "bugs": "https://github.com/Daredzik/leaflet-routing-machine-locationiq/issues",
+  "browserify-shim": {
+    "leaflet": "global:L"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "browserify-derequire": "^0.9.4",
+    "browserify-shim": "^3.8.13",
+    "derequire": "^2.0.6",
+    "uglify-js": "^2.8.2"
+  },
+  "dependencies": {
+    "@mapbox/corslite": "0.0.7",
+    "@mapbox/polyline": "^0.2.0",
+    "osrm-text-instructions": "^0.13.2"
+  }
+}
